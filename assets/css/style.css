@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #132add;
+    background-color: #6c77cd;
     font-family: 'Poppins', sans-serif;
     color: #445361;
     text-align: center;
@@ -26,4 +26,20 @@ body {
 .logo {
     height: 40px;
     padding-right: 5px;
+}
+
+/* Game Layout */
+
+.game-area {
+    position: absolute;
+    width: 90%;
+    max-width: 37em;
+    background-color: #ffffff;
+    padding: 7em 3em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    border-radius: 1em;
 }
