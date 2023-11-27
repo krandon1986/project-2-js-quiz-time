@@ -1,4 +1,4 @@
-
+// Locations and Hints Object
 const options = {
     Paris: "City; The Effiel Tower",
     Himalayas: "Highest mountain range in the world",
@@ -31,3 +31,14 @@ const options = {
     Madagascar: "The world's fourth largest island near the southeastern coast of Africa",
     Indonesia: "Country; The world's largest archipelagic state",
 };
+
+//Initial References
+const message = document.getElementById("message");
+const hint = documment.querySelector(".hint");
+const controls = document.querySelector(".controls-area");
+const startBtn = document.getElementById("start");
+const onScreenKeyboard = document.getElementById("on-screen-keyboard");
+const userInput = document.getElementById("user-input");
+const resultDisplay = document.getElementById("result");
+const word = document.getElementById("word");
+const words = Object.keys(options);
