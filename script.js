@@ -42,3 +42,10 @@ const userInput = document.getElementById("user-input");
 const resultDisplay = document.getElementById("result");
 const word = document.getElementById("word");
 const words = Object.keys(options);
+let randomWord = "",
+    randomHint = "";
+let winCount = 0,
+    lossCount = 0;
+
+//Generate random location values
+const generateRandomValue = (array) => Math.floor(Math.random() * array.length);
