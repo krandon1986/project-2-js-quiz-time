@@ -68,6 +68,9 @@ const stopGame = () => {
     controls.classList.remove("hide");
 };
 
+//Generate Location Function
+const generateLocation = () => {};
+
 //Initial Game Function
 const init = () => {
     winCount = 0;
@@ -79,5 +82,11 @@ const init = () => {
     userInput.innerHTML = "";
     onScreenKeyboard.classList.add("hide");
     onScreenKeyboard.innerHTML = "";
-    generateRandomValue();
+    generateLocation();
+}
+
+//For creating letter buttons
+for (let i = 65; i < 91; i++) {
+    let button = document.createElement("button");
+    button.classList.add("letters");
 }
