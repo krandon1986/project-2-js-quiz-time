@@ -53,6 +53,8 @@ const generateRandomValue = (array) => Math.floor(Math.random() * array.length);
 //Block all the buttons
 const blocker = () => {
     let lettersButtons = document.querySelectorAll(".letters");
+
+    stopGame();
 };
 
 // Start the Game
@@ -65,3 +67,17 @@ startBtn.addEventListener("click", () => {
 const stopGame = () => {
     controls.classList.remove("hide");
 };
+
+//Initial Game Function
+const init = () => {
+    winCount = 0;
+    lossCount = 5;
+    randomWord = "";
+    word.innerText = "";
+    randomHint = "";
+    message.innerText = "";
+    userInput.innerHTML = "";
+    onScreenKeyboard.classList.add("hide");
+    onScreenKeyboard.innerHTML = "";
+    generateRandomValue();
+}
