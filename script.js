@@ -34,7 +34,7 @@ const options = {
 
 //Initial References
 const message = document.getElementById("message");
-const hint = documment.querySelector(".hint");
+const hint = documment.querySelector(".hints");
 const controls = document.querySelector(".controls-area");
 const startBtn = document.getElementById("start");
 const onScreenKeyboard = document.getElementById("on-screen-keyboard");
@@ -53,23 +53,26 @@ const generateRandomValue = (array) => Math.floor(Math.random() * array.length);
 //Block all the buttons
 const blocker = () => {
     let lettersButtons = document.querySelectorAll(".letters");
-
     stopGame();
 };
 
 // Start the Game
-startBtn.addEventListener("click", () => {
+
+function startGame() {
+    startBtn.addEventListener("click", () => {
     controls.classList.add("hide");
     init();
 });
-
+};
 //Stop the Game
 const stopGame = () => {
     controls.classList.remove("hide");
 };
 
 //Generate Location Function
-const generateLocation = () => {};
+const generateLocation = () => {
+    onScreenKeyboard.classList.remove("hide");
+};
 
 //Initial Game Function
 const init = () => {
@@ -83,10 +86,19 @@ const init = () => {
     onScreenKeyboard.classList.add("hide");
     onScreenKeyboard.innerHTML = "";
     generateLocation();
-}
 
-//For creating letter buttons
-for (let i = 65; i < 91; i++) {
-    let button = document.createElement("button");
-    button.classList.add("letters");
-}
+    //For creating letter buttons
+    for (let i = 65; i < 91; i++) {
+        let button = document.createElement("button");
+        button.classList.add("letters");
+
+        //Number to ASCII [A-Z]
+        button.innerText = String.fromCharCode(i);
+
+        onScreenKeyboard.appendChild(button);
+    }
+};
+
+window.onload = () => {
+    init();
+};

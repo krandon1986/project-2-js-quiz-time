@@ -65,6 +65,23 @@ body {
     border-radius: 2em;
 }
 
+#on-screen-keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8em 0.4em;
+    justify-content: center;
+}
+#on-screen-keyboard button {
+    background-color: #ffffff;
+    border: 2px solid #6c77cd;
+    color: #6c77cd;
+    outline: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+    height: 3em;
+    width: 3em;
+}
+
 .hide{
     display: none;
 }
