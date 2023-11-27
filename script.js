@@ -49,3 +49,8 @@ let winCount = 0,
 
 //Generate random location values
 const generateRandomValue = (array) => Math.floor(Math.random() * array.length);
+
+//Block all the buttons
+const blocker = () => {
+    let lettersButtons = document.querySelectorAll(".letters");
+};
