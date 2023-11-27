@@ -54,3 +54,14 @@ const generateRandomValue = (array) => Math.floor(Math.random() * array.length);
 const blocker = () => {
     let lettersButtons = document.querySelectorAll(".letters");
 };
+
+// Start the Game
+startBtn.addEventListener("click", () => {
+    controls.classList.add("hide");
+    init();
+});
+
+//Stop the Game
+const stopGame = () => {
+    controls.classList.remove("hide");
+};
