@@ -110,7 +110,48 @@ const init = () => {
         button.addEventListener("click", () => {
             message.innerHTML = `Correct Letter`;
             message.style.color = "#008000";
+            let charArray = randomWord.toUpperCase().split("");
+            let inputSpace = document.getElementsByClassName("inputSpace");
+
+            //If array contains clicked value replace the matched Dash with Letter
+            if(charArray.includes(button.innerText)){
+                charArray.forEach((char,index) => {
+                    //If the character in the arry is the same as the clicked button
+                    if(char === button.innerText) {
+                        button.classList.add("correct");
+                        //Replace dash with letter
+                        inputSpace[index].innerText = char;
+                        //increment counter
+                        winCount += 1;
+                        //If the winCount equals word length
+                        if(winCount == charArray.length){
+                            resultDisplay.innerHTML = "You Won";
+                            startBtn.innerText = "Restart";
+                            //Block all the buttons
+                            blocker();
+                        }     
+                    }
+                });
+            }
+            else {
+                //lose the count
+                button.classList.add("incorrect");
+                lossCount -= 1;
+                document.getElementById("chancesCount").innerText = `Chances Left: ${lossCount}`;
+                message.innerText = `Incorrect Letter`;
+                message.style.color = "#ff0000";
+                if (lossCount == 0) {
+                    word.innerHTML = `The word was: <span>${randomWord}</span>`;
+                    resultDisplay.innerHTML = "Game Over";
+                    blocker();
+                }
+            }
+
+            //Disable the clicked buttons
+            button.disabled = true;
         });
+
+    
 
         //Append generated buttons to the onscreen keyboard
         onScreenKeyboard.appendChild(button);
