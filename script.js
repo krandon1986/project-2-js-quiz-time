@@ -74,7 +74,7 @@ const generateLocation = () => {
     randomWord = words[generateRandomlocation(words)];
     randomHint = options[randomWord];
     hint.innerHTML = `<div id="wordHint">
-    <span>Hint:</span>${randomHint}</div>`;
+    <span>Hint: </span><br>${randomHint}</div>`;
     let displayItem = "";
     randomWord.split("").forEach((value) => {
         displayItem += '<span class="inputSpace">_ </span>';
@@ -150,8 +150,6 @@ const init = () => {
             //Disable the clicked buttons
             button.disabled = true;
         });
-
-    
 
         //Append generated buttons to the onscreen keyboard
         onScreenKeyboard.appendChild(button);
