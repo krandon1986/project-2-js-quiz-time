@@ -63,6 +63,7 @@ body {
     border: none;
     outline: none;
     border-radius: 2em;
+    cursor: pointer;
 }
 
 #on-screen-keyboard {
@@ -81,7 +82,18 @@ body {
     height: 3em;
     width: 3em;
 }
+#on-screen-keyboard .correct {
+    background-color: #008000;
+    color: #ffffff;
+    border: 2px solid #008000;
+}
 
-.hide{
+#on-screen-keyboard .incorrect {
+    background-color: red;
+    color: #ffffff;
+    border: 2px solid red;
+}
+
+.hide {
     display: none;
 }

@@ -1,4 +1,4 @@
-// Locations and Hints Object
+//Locations and Hints Object
 const options = {
     Paris: "City; The Effiel Tower",
     Himalayas: "Highest mountain range in the world",
@@ -48,7 +48,7 @@ let winCount = 0,
     lossCount = 0;
 
 //Generate random location values
-const generateRandomValue = (array) => Math.floor(Math.random() * array.length);
+const generateRandomlocation = (array) => Math.floor(Math.random() * array.length);
 
 //Block all the buttons
 const blocker = () => {
@@ -56,14 +56,12 @@ const blocker = () => {
     stopGame();
 };
 
-// Start the Game
-
-function startGame() {
-    startBtn.addEventListener("click", () => {
+//Start the Game
+startBtn.addEventListener("click", () => {
     controls.classList.add("hide");
     init();
 });
-};
+
 //Stop the Game
 const stopGame = () => {
     controls.classList.remove("hide");
@@ -72,6 +70,15 @@ const stopGame = () => {
 //Generate Location Function
 const generateLocation = () => {
     onScreenKeyboard.classList.remove("hide");
+    userInput.innerText = "";
+    randomWord = words[generateRandomlocation(words)];
+    randomHint = options[randomWord];
+    hint.innerHTML = `<div id="wordHint">
+    <span>Hint:</span>${randomHint}</div>`;
+    let displayItem = "";
+    randomWord.split("").forEach((value) => {
+        displayItem += '<span class="inputSpace">_</span>';
+    });
 };
 
 //Initial Game Function
@@ -95,6 +102,10 @@ const init = () => {
         //Number to ASCII [A-Z]
         button.innerText = String.fromCharCode(i);
 
+        //Character button onclick
+        button.addEventListener("click", () => {});
+
+        //Append generated buttons to the onscreen keyboard
         onScreenKeyboard.appendChild(button);
     }
 };
