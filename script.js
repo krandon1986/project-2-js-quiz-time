@@ -77,8 +77,12 @@ const generateLocation = () => {
     <span>Hint:</span>${randomHint}</div>`;
     let displayItem = "";
     randomWord.split("").forEach((value) => {
-        displayItem += '<span class="inputSpace">_</span>';
+        displayItem += '<span class="inputSpace">_ </span>';
     });
+
+    //Display each element as span
+    userInput.innerHTML = displayItem;
+    userInput.innerHTML += `<div id='chancesCount'>Chances Left: ${lossCount}</div>`;
 };
 
 //Initial Game Function
@@ -103,7 +107,10 @@ const init = () => {
         button.innerText = String.fromCharCode(i);
 
         //Character button onclick
-        button.addEventListener("click", () => {});
+        button.addEventListener("click", () => {
+            message.innerHTML = `Correct Letter`;
+            message.style.color = "#008000";
+        });
 
         //Append generated buttons to the onscreen keyboard
         onScreenKeyboard.appendChild(button);

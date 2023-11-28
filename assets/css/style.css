@@ -6,6 +6,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -71,6 +72,7 @@ body {
     flex-wrap: wrap;
     gap: 0.8em 0.4em;
     justify-content: center;
+    margin-top: 2em;
 }
 #on-screen-keyboard button {
     background-color: #ffffff;
@@ -94,6 +96,31 @@ body {
     border: 2px solid red;
 }
 
+.hints {
+    margin-bottom: 1em;
+}
+
+.hints span {
+    font-weight: 600;
+}
+
+#chancesCount {
+    margin: 1em 0;
+    position: absolute;
+    top: 0.62em;
+    right: 2em;
+}
+
+#word {
+    font-weight: 600;
+}
+
+#word span {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
 .hide {
     display: none;
 }
+
