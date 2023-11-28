@@ -116,7 +116,7 @@ const init = () => {
             //If array contains clicked value replace the matched Dash with Letter
             if(charArray.includes(button.innerText)){
                 charArray.forEach((char,index) => {
-                    //If the character in the arry is the same as the clicked button
+                    //If the character in the array is the same as the clicked button
                     if(char === button.innerText) {
                         button.classList.add("correct");
                         //Replace dash with letter
