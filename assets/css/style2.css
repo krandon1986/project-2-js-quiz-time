@@ -9,13 +9,13 @@
     font-family: "Poppins", sans-serif;
   }
   body {
-    background-color: #6c77cd;
+    background-color: #191970;
   }
   .game-area {
     position: absolute;
     width: 90%;
     max-width: 37em;
-    background-color: #ffffff;
+    background-color: #FDF5E6;
     padding: 7em 3em;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -25,7 +25,8 @@
     border-radius: 1em;
   }
   .controls-area {
-    background-color: #6c77cd;
+    background-color: #191970;
+    color:#ffffff;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -36,26 +37,40 @@
     top: 0;
   }
 
+
   /* buttons*/
 
   #start {
     font-size: 1.2em;
     padding: 1em 3em;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 2em;
+    cursor: pointer;
+    margin-left: 25px;
+  }
+
+  #start:active,
+  #start:hover {
     background-color: grey;
+    color: #ffffff;
+  }
+
+  .menu {
+    font-size: 1.2em;
+    padding: 1em 3em;
+    background-color: #ffffff;
     border: none;
     outline: none;
     border-radius: 2em;
     cursor: pointer;
   }
 
-  .menu {
-    font-size: 1.2em;
-    padding: 1em 3em;
+  .menu:active,
+  .menu:hover {
     background-color: grey;
-    border: none;
-    outline: none;
-    border-radius: 2em;
-    cursor: pointer;
+    color:#ffffff;
   }
 
   .button-area {
@@ -71,9 +86,9 @@
   }
 
   #on-screen-keyboard button {
-    background-color: #ffffff;
-    border: 2px solid #6c77cd;
-    color: #6c77cd;
+    background-color: #FDF5E6;
+    border: 2px solid #191970;
+    color: #191970;
     outline: none;
     border-radius: 0.3em;
     cursor: pointer;
@@ -83,12 +98,12 @@
 
   #on-screen-keyboard .correct {
     background-color: #008000;
-    color: #ffffff;
+    color: #FDF5E6;
     border: 2px solid #008000;
   }
   #on-screen-keyboard .incorrect {
     background-color: #ff0000;
-    color: #ffffff;
+    color: #FDF5E6;
     border: 2px solid #ff0000;
   }
 
