@@ -12,6 +12,10 @@
     background-color: #191970;
   }
 
+  p {
+    color:#ffffff;
+  }
+
   /* Heading */ 
 
   .heading {
@@ -52,6 +56,19 @@
     top: 0;
   }
 
+  .rules {
+    background-color:#191970;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+
 
   /* buttons*/
 
@@ -86,6 +103,25 @@
   .menu:hover {
     background-color: grey;
     color:#ffffff;
+  }
+
+  #play{
+    color:#ffffff;
+    padding-top: 1px;
+    background-color: #191970;
+    width: 50px;
+    height: 50px;
+    font-size: 3.2rem;
+    margin: 0 30px;
+    border: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+  #play:active,
+  #play:hover {
+    color: grey;
+
   }
 
   .button-area {
@@ -152,6 +188,10 @@
 
   @media (max-width: 375px) {
     .game-area {
+      width: 50%;
+    }
+
+    .heading {
       width: 50%;
     }
   }
