@@ -186,6 +186,18 @@
       display: none;
   }
 
+  footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    min-height: 80px;
+    padding-top: 5px;
+    text-align: center;
+    background-color: #070743;
+}
+
   @media (max-width: 375px) {
     .game-area {
       width: 50%;
