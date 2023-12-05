@@ -6,7 +6,7 @@ const options = {
     China: "Country; The Great Wall",
     England: "Country; London is it's capital",
     Wolverhampton: "City; Named after Wulfrun, a Merican noblewoman and landowner",
-    Antarctic: "Uninhabited continent in the Southern Hemisphere and the site of the South Pole", 
+    Antarctica: "Uninhabited continent in the Southern Hemisphere and the site of the South Pole", 
     Salisbury: "City; Famous for Stonehenge", 
     Australia: "Country; Down Under", 
     Bethlehem: "Town; Biblical birthplace of Jesus",
@@ -126,6 +126,7 @@ const options = {
               //If winCount equals word length
               if (winCount == charArray.length) {
                 resultDisplay.innerHTML = "You Won";
+                word.innerHTML = `${randomWord}`;
                 startBtn.innerText = "Restart";
                 //block all buttons
                 blocker();
