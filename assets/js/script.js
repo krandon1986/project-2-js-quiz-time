@@ -42,10 +42,10 @@ const options = {
   const resultDisplay = document.getElementById("result");
   const word = document.getElementById("word");
   const words = Object.keys(options);
-  let randomWord = "",
-    randomHint = "";
-  let winCount = 0,
-    lossCount = 0;
+  let randomWord = "";
+  let randomHint = "";
+  let winCount = 0;
+  let lossCount = 0;
   
   //Generate random location values
   const generateRandomlocation = (array) => Math.floor(Math.random() * array.length);
@@ -108,7 +108,7 @@ const options = {
   
       //Character button onclick
       button.addEventListener("click", () => {
-        message.innerText = `Correct Letter`;
+        message.innerText = "Correct Letter";
         message.style.color = "#008000";
         let charArray = randomWord.toUpperCase().split("");
         let inputSpace = document.getElementsByClassName("inputSpace");
