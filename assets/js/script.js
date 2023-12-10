@@ -125,7 +125,7 @@ const options = {
               winCount += 1;
               //If winCount equals word length
               if (winCount == charArray.length) {
-                resultDisplay.innerHTML = "You Won";
+                resultDisplay.innerHTML = "You've Won. Congratulation";
                 word.innerHTML = `${randomWord}`;
                 startBtn.innerText = "Restart";
                 //block all buttons

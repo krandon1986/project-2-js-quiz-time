@@ -39,8 +39,100 @@ The site is live can be access [here](https://krandon1986.github.io/project-2-js
 
     ![Game Play](assets/screenshot/wireframe2.png)
 
-    - Feedback to the game when you lose.
+    - Feedback to the game when the player loses.
 
     ![Game Loss](assets/screenshot/wireframe3.png) 
 
+    - Feedback to the game when the player wins.
 
+    ![Game Win](assets/screenshot/wireframe4.png)
+
+
+## Features
+In this section, the features that have been implemented on the site will be explained.
+
+- __Heading and Rules__ 
+    - The title is displayed in Poppin font inbetween the two images of location logos. 
+    - The rule of the game is displayed before the main heading, along with the play button that is lead to the main game page.
+    - The play icon on the play button is from [Font Awesome](https://fontawesome.com/)
+
+    ![Heading and Rules](assets/screenshot/heading.png)
+
+- __Game Buttons__
+    - On the game page, there are two buttons.
+        - The Main Menu button will lead the player back to the main menu page when it is clicked.
+        - The Start button will allow the player to start the game. 
+    
+      ![Game Buttons](assets/screenshot/gamebuttons.png)
+
+- __Game Area__
+    - There is a life counter on the top right hand corner of the board to indicate the amount of wrong answers you can get before it is game over. 
+    - The hint section will display a clue on what the location is. 
+    - The game input will display the answer, but each letter will be replaced by _ unless the player select the right letter that matches the letter in the answer. 
+    - The 26 buttons on the board are consist of the letter of the alphabet, in alphabetical order instead of keyboard letter order. 
+
+    ![Game Area](assets/screenshot/gamearea.png)  
+
+    - When the player selects a letter that is in the game input field, the letter of the missing word will be revealed and the selected button highlighted green to indicate that it is the right letter. 
+
+      ![Correct Letter](assets/screenshot/right-letter.png)
+
+    - However, if the player selects the wrong letter, a life is taken and the selected button is highlighed red to indicate that it is wrong letter. 
+
+      ![Incorrect Letter](assets/screenshot/wrong-letter.png)
+
+- __Game Result__
+    - When the player get all the right letters, the game ends with a victory.
+
+    ![Victory](assets/screenshot/gamevictory.png)
+
+    - After running out of the five lives, the games end with a game over and also reveals the right answer to the player.
+
+    ![Loss](assets/screenshot/gameover.png)
+
+## Testing 
+
+- HTML Validator
+    - No errors were shown after HTML code was passing through [W3C validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkrandon1986.github.io%2Fproject-2-js-guess-the-location%2F#l13c73)
+
+- CSS Validator 
+    - No errors was found when passing the CSS code through [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkrandon1986.github.io%2Fproject-2-js-guess-the-location%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+- Accessibility 
+
+    - Main Menu
+
+        ![Index](assets/screenshot/accessibility1.png)
+
+    - Game Area
+
+        ![Game](assets/screenshot/accessibility2.png)
+
+- Mobile Responsiveness
+    - Maximum screen width for responsive design was done at 375px.   
+    - Mobile responsiveness was limited to the "toggle device" feature in Chrome Developer Tools due to lack of access to more physical devices.
+
+## Bugs
+
+| Bug | Solution |
+| --------------- | --------------- |
+| 1. HTML Validator identifies there is a illegal character on the page | There was a space in image filename, so I removed it.|
+| 2. The Heading is out of proportions on the mobile device | 
+
+## Deployment
+
+This Guess the Location site was deployed on GitHub page.
+
+- Here are following steps to deploy your site:
+    - In your GitHid repository, click the 'setting' tab.
+    - Look at the left menu and select 'Pages'
+    - In the source section drop-down menu, select the 'Main Branch' and click 'Save'
+    - After a successful save, the GitHub section will display a message to inform you that the site is ready to be published at https://krandon1986.github.io/project-2-js-guess-the-location/
+
+## Credit
+ - The framework I used to build the "Guess the Location" game is from a Youtube Javascript tutorial video created by [Coding Artist](https://youtu.be/-qd5sjOfgYY?si=P-blTVa5n_2cj4am)
+ 
+ - General Guidance 
+    - [Font](https://fonts.google.com/)
+    - [Icons](https://fontawesome.com/)
+    - [color](https://www.w3schools.com/)
