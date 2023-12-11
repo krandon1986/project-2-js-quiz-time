@@ -42,11 +42,16 @@ const options = {
   const resultDisplay = document.getElementById("result");
   const word = document.getElementById("word");
   const words = Object.keys(options);
+  const scoreWon = document.getElementById("score1");
+  const scoreLoss = document.getElementById("score2");
   let randomWord = "";
   let randomHint = "";
   let winCount = 0;
   let lossCount = 0;
-  
+  let victory = 0;
+  let lose = 0;
+
+ 
   //Generate random location values
   const generateRandomlocation = (array) => Math.floor(Math.random() * array.length);
   
@@ -89,6 +94,8 @@ const options = {
   const init = () => {
     winCount = 0;
     lossCount = 5;
+    victory = 0;
+    lose = 0;
     randomWord = "";
     word.innerText = "";
     randomHint = "";
@@ -125,24 +132,30 @@ const options = {
               winCount += 1;
               //If winCount equals word length
               if (winCount == charArray.length) {
+                victory++;
                 resultDisplay.innerHTML = "You've Won. Congratulation";
                 word.innerHTML = `${randomWord}`;
+                scoreWon.innerHTML = `Wins: <span style="color:green; font-weight=bold">${victory}</span>`;
                 startBtn.innerText = "Restart";
+                
                 //block all buttons
                 blocker();
               }
             }
           });
         } else {
-          //lose count
-          button.classList.add("incorrect");
-          lossCount -= 1;
-          document.getElementById("chancesCount").innerText = `Chances Left: ${lossCount}`;
-          message.innerText = `Incorrect Letter`;
-          message.style.color = "#ff0000";
-          if (lossCount == 0) {
+            //else the lossCount equal zero
+            button.classList.add("incorrect");
+            lossCount -=1;
+            document.getElementById("chancesCount").innerText = `Chances Left: ${lossCount}`;
+            message.innerText = `Incorrect Letter`;
+            message.style.color = "#ff0000";
+          if (lossCount == 0) {       
+            lose++;
             word.innerHTML = `The word was: <span>${randomWord}</span>`;
             resultDisplay.innerHTML = "Game Over";
+            scoreLoss.innerHTML = `Losses: <span style="color:red; font-weight=bold">${lose}</span>`;
+            
             blocker();
           }
         }

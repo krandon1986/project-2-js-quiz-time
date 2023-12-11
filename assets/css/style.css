@@ -158,6 +158,8 @@
     border: 2px solid #ff0000;
   }
 
+  /* Game pages */ 
+
   .hints {
     margin-bottom: 1em;
   }
@@ -174,6 +176,16 @@
   }
 
   #word {
+    font-weight: 600;
+    margin: 1em 0 2em 0;
+  }
+
+  #score1 {
+    font-weight: 600;
+    margin: 1em 0 2em 0;
+  }
+
+  #score2 {
     font-weight: 600;
     margin: 1em 0 2em 0;
   }

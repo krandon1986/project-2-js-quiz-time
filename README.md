@@ -117,14 +117,14 @@ In this section, the features that have been implemented on the site will be exp
 | Bug | Solution |
 | --------------- | --------------- |
 | 1. HTML Validator identifies there is a illegal character on the page | There was a space in image filename, so I removed it.|
-| 2. The Heading is out of proportions on the mobile device | 
+| 2. The Heading is out of proportions on the mobile device | Scale down the max-width to max-width of the mobile devices 
 
 ## Deployment
 
 This Guess the Location site was deployed on GitHub page.
 
 - Here are following steps to deploy your site:
-    - In your GitHid repository, click the 'setting' tab.
+    - In your GitHib repository, click the 'setting' tab.
     - Look at the left menu and select 'Pages'
     - In the source section drop-down menu, select the 'Main Branch' and click 'Save'
     - After a successful save, the GitHub section will display a message to inform you that the site is ready to be published at https://krandon1986.github.io/project-2-js-guess-the-location/
