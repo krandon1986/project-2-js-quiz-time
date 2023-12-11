@@ -219,8 +219,9 @@
     .logo {
       max-width: 280px;
     }
-    .heading h1 {
+    .heading, h1 {
       max-width: 280px;
+      font-size: 2rem;
     }
 
     .rules {
@@ -252,7 +253,7 @@
     .logo {
       max-width: 360px;
     }
-    .heading h1 {
+    .heading, h1 {
       max-width: 360px;
     }
 
@@ -321,8 +322,9 @@
     .logo {
       max-width: 412px;
     }
-    .heading h1 {
+    .heading, h1 {
       max-width: 412px;
+      font-size: 2rem;
     }
 
     #start {
@@ -413,8 +415,9 @@
     .logo {
       max-width: 540px;
     }
-    .heading h1 {
+    .heading, h1 {
       max-width: 540px;
+      font-size: 2rem;
     }
 
     #start {

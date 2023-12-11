@@ -90,6 +90,13 @@ In this section, the features that have been implemented on the site will be exp
 
     ![Loss](assets/screenshot/gameover.png)
 
+- __Win and Lose Count__
+    - After winning a game, there will be a win count under the result to indicate the numbers of victories you have accumulated.
+    - When you lose a game, there will be a loss count underneath the win count that shows the numbers of losses you have gain.
+    - When you exit the game by returning the main menu, you win and lose count will reset to 0 when you start the game again. 
+
+    ![win and loss count](assets/screenshot/win-and-lose-count.png) 
+
 ## Testing 
 
 - HTML Validator
