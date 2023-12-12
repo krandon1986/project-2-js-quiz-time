@@ -1,3 +1,6 @@
+//The source code on this script is based from a Youtube Javascript tutorial video created by Coding Artist.
+//Certain codes on from the source are alternated and new line code is added new features to the game. 
+
 //Locations and Hints Object
 const options = {
     Paris: "City; The Effiel Tower",
