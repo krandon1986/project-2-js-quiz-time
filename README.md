@@ -125,7 +125,7 @@ In this section, the features that have been implemented on the site will be exp
 | --------------- | --------------- |
 | 1. HTML Validator identifies there is a illegal character on the page | There was a space in image filename, so I removed it.|
 | 2. The Heading is out of proportions on the mobile device | Scale down the max-width to max-width of the mobile devices.|
-| 3. The Increment operators for the Win and Loss counts is not working probably as when I lose or win a game for a second time, the count remind as 1. | Having these lines of code: "victory: 0;" and "lose: 0;" in the initial game function has prevented the count from going beyond 1. So I removed these two lines of code and it win and lose counts works prefectly. 
+| 3. The Increment operators for the Win and Loss counts is not working properly as when I lose or win a game for a second time, the count remind as 1. | Having these lines of code: "victory: 0;" and "lose: 0;" in the initial game function has prevented the count from going beyond 1. So I removed these two lines of code and it win and lose counts works prefectly. 
 
 ## Deployment
 
