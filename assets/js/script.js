@@ -94,8 +94,6 @@ const options = {
   const init = () => {
     winCount = 0;
     lossCount = 5;
-    victory = 0;
-    lose = 0;
     randomWord = "";
     word.innerText = "";
     randomHint = "";

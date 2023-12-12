@@ -211,6 +211,8 @@
     background-color: #070743;
 }
 
+/* Media Responsive */
+
   @media (max-width: 280px) {
     .game-area {
       max-width: 280px;
