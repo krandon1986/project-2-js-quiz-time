@@ -25,10 +25,16 @@
     background-color: white;    
   }
 
-  .logo {
+  .logo1 {
     height: 40px;
     padding-right: 5px;
   }
+
+  .logo2 {
+    height: 40px;
+    padding-right: 5px;
+  }
+
 
   /* Game Layout */
   .game-area {
@@ -180,6 +186,10 @@
     margin: 1em 0 2em 0;
   }
 
+  .scoreboard {
+    display: flex;
+  }
+
   #score1 {
     font-weight: 600;
     margin: 1em 0 2em 0;
@@ -188,6 +198,7 @@
   #score2 {
     font-weight: 600;
     margin: 1em 0 2em 0;
+    margin-left: 30px;
   }
 
   #word span {
@@ -218,9 +229,14 @@
       max-width: 280px;
     }
 
-    .logo {
-      max-width: 280px;
+    .logo1 {
+      display: inline-block;
     }
+
+    .logo2 {
+      display: none;
+    }
+
     .heading, h1 {
       max-width: 280px;
       font-size: 2rem;
@@ -252,9 +268,14 @@
       max-width: 360px;
     }
 
-    .logo {
+    .logo1 {
       max-width: 360px;
     }
+
+    .logo2 {
+      max-width: 100px;
+    }
+
     .heading, h1 {
       max-width: 360px;
     }
@@ -275,11 +296,17 @@
       max-width: 375px;
     }
 
-    .logo {
-      max-width: 375px;
+    .logo1 {
+      max-width: 100px;
     }
+
+    .logo2 {
+      max-width: 100px;
+    }
+
     .heading h1 {
       max-width: 375px;
+      font-size: 1rem;
     }
 
     #start {
@@ -419,7 +446,7 @@
     }
     .heading, h1 {
       max-width: 540px;
-      font-size: 2rem;
+      font-size: 1rem;
     }
 
     #start {

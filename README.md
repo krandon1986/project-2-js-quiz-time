@@ -110,6 +110,11 @@ In this section, the features that have been implemented on the site will be exp
     - There are several incorrect operators in the start IDs and menu classes in the CSS.  
     - After the corrections, there were no errors was found when passing the CSS code through [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkrandon1986.github.io%2Fproject-2-js-guess-the-location%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
+- JavaScript Check
+    - This javascript has no errors, but has 48 warnings on the several lines of code being available in the ES6 (ECMAScript6)
+    - One variable in the script is not used, so I removed it from the code. 
+    - Click [here](https://jshint.com/) to open the JSHint page, and copy and paste the code inside it check the code from your perspective. 
+
 - Accessibility 
 
     - Main Menu

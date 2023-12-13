@@ -60,19 +60,7 @@ const options = {
   
   //Block all the buttons
   const blocker = () => {
-    let lettersButtons = document.querySelectorAll(".letters");
     stopGame();
-  };
-  
-  //Start the Game
-  startBtn.addEventListener("click", () => {
-    controls.classList.add("hide");
-    init();
-  });
-  
-  //Stop the Game
-  const stopGame = () => {
-    controls.classList.remove("hide");
   };
   
   //Generate Location Function
@@ -168,6 +156,17 @@ const options = {
       //Append generated buttons to the letters container
       onScreenKeyboard.appendChild(button);
     }
+  };
+  
+  //Start the Game
+  startBtn.addEventListener("click", () => {
+    controls.classList.add("hide");
+    init();
+  });
+  
+  //Stop the Game
+  const stopGame = () => {
+    controls.classList.remove("hide");
   };
   
   window.onload = () => {
