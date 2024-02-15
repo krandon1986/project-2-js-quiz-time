@@ -19,11 +19,11 @@
      background-color: white;
 }
  .logo1 {
-     height: 40px;
+     height: 50px;
      padding-right: 5px;
 }
  .logo2 {
-     height: 40px;
+     height: 50px;
      padding-right: 5px;
 }
 /* Game Layout */
@@ -109,38 +109,43 @@
  .button-area {
      display: flex;
 }
- #on-screen-keyboard {
+ #answers {
      display: flex;
      flex-wrap: wrap;
-     gap: 0.8em 0.4em;
      justify-content: center;
-     margin-top: 2em;
+     margin: 10px, 0;
+     padding: 10px;
 }
- #on-screen-keyboard button {
+ #answers button {
      background-color: #FDF5E6;
      border: 2px solid #191970;
      color: #191970;
      outline: none;
-     border-radius: 0.3em;
+     border-radius: 4px;
      cursor: pointer;
      height: 3em;
-     width: 3em;
+     width: 100%;
+     transition: all 0.3s;
 }
- #on-screen-keyboard .correct {
+ #answers .correct {
      background-color: #008000;
      color: #FDF5E6;
      border: 2px solid #008000;
 }
- #on-screen-keyboard .incorrect {
+ #answers .incorrect {
      background-color: #ff0000;
      color: #FDF5E6;
      border: 2px solid #ff0000;
 }
+#answer:hover {
+    background-color: grey;
+    color: #FDF5E6;
+}
 /* Game pages */
- .hints {
+ .questions {
      margin-bottom: 1em;
 }
- .hints span {
+ .questions span {
      font-weight: 600;
 }
  #chancesCount {
@@ -201,7 +206,7 @@
      .rules {
          height: 70%;
     }
-     #on-screen-keyboard button {
+     #answers button {
          width: 2em;
          height: 2em;
     }
