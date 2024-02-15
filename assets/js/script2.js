@@ -133,6 +133,7 @@ const scoreWon = document.getElementById("score1");
 const scoreLoss = document.getElementById("score2");
 let randomAnswer = "";
 let randomQuestion = "";
+let winCount = 0;
 let lossCount = 0;
 let victory = 0;
 let lose = 0;
@@ -151,7 +152,7 @@ const generateQuestion = () => {
     randomAnswer = quiz[generateRandomquestion(quiz)];
     randomQuestion = questions[randomAnswer];
     questionDisplay.innerHTML = `<div id="questionShown">
-    <span>Question:</span><br>${randomQuestion}</div>`
+    <span>Question: </span><br>${randomQuestion}</div>`
 
     //Display each element as span
     chance.innerHTML += `<div id='chancesCount'>Chance Left: ${lossCount}</div>`;
@@ -159,6 +160,7 @@ const generateQuestion = () => {
 
 //Initial Game Function
 const init = () => {
+    winCount = 0;
     lossCount = 2;
     randomAnswer = "";
     word.innerText = "";
@@ -176,5 +178,51 @@ const init = () => {
         button.innerHTML = answer.text;
         button.classList.add("button");
         answerBtn.appendChild(button);
+        if(answer.correct){
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener("click", pickAnswer);
     });
+
+    //Character button onclick
+    button.addEventListener("click", () => {
+        let charArray = randomAnswer.toUpperCase().split("");
+
+        //If the answer in the array is the same as the clicked button
+        if (charArray.includes(button.innerText)) {
+            charArray.forEach((char, index) => {
+                //If character in array is same as clicked button
+                if (char === button.innerText) {
+                    button.classList.add("correct");
+                    //increment counter
+                    winCount += 1;
+                    //If winCount equal the correct answer
+                    if (winCount == charArray.length) {
+                        victory++;
+                        resultDisplay.innerHTML = "You've Won. Congratulation";
+                        word.innerHTML = `${randomAnswer}`;
+                        scoreWon.innerHTML = `Wins <span style="color:green; font-weight=bold">${victory}</span>`;
+                        startBtn.innerText = "Restart";
+
+                        //Block all buttons
+                        blocker();
+                    }                
+                }
+            });    
+        } else {
+            //else the lossCount equal zero
+            
+        }
+    });
+}
+
+//Put the random answers to the buttons
+function pickAnswer(e) {
+    const selectedButton = e.target;
+    const correctAns = selectedButton.dataset.correct === true;
+    if(correctAns){
+        selectedButton.classList("correct");
+    } else {
+        selectedButton.classList("incorrect");
+    }
 }
