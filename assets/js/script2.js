@@ -128,7 +128,6 @@ const answerBtn = document.getElementById("answers");
 const chance = document.getElementById("lives");
 const resultDisplay = document.getElementById("result");
 const word = document.getElementById("word");
-const quiz = Object.keys(questions);
 const scoreWon = document.getElementById("score1");
 const scoreLoss = document.getElementById("score2");
 let randomAnswer = "";
@@ -149,7 +148,6 @@ const blocker = () => {
 //Generate Questions Function
 const generateQuestion = () => {
     answerBtn.classList.remove("hide");
-    randomAnswer = quiz[generateRandomquestion(quiz)];
     randomQuestion = questions[randomAnswer];
     questionDisplay.innerHTML = `<div id="questionShown">
     <span>Question: </span><br>${randomQuestion}</div>`;
