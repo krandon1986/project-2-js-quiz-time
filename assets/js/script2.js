@@ -120,13 +120,13 @@ const questions = [
 ];
 
 //Initial Reference
-const message = document.getElementById("message");
+const message = document.getElementById("user-message");
 const questionDisplay = document.querySelector(".questions");
 const controls = document.querySelector(".controls-area");
 const startBtn = document.getElementById("start");
 const answerBtn = document.getElementById("answers");
 const chance = document.getElementById("lives");
-const resultDisplay = document.getElementById("result");
+const displayResult = document.getElementById("result");
 const word = document.getElementById("word");
 const scoreWon = document.getElementById("score1");
 const scoreLoss = document.getElementById("score2");
@@ -138,7 +138,8 @@ let victory = 0;
 let lose = 0;
 
 //Generate random question values
-const generateRandomquestion = (array) => Math.floor(Math.random() * array.length);
+const generateRandomQuestion = (array) => Math.floor(Math.random() * array.length);
+const getRandomQuestion = (numberOfQuestion) => Math.floor(numberOfQuestion * Math.random());
 
 //Block all the buttons
 const blocker = () => {
@@ -148,12 +149,12 @@ const blocker = () => {
 //Generate Questions Function
 const generateQuestion = () => {
     answerBtn.classList.remove("hide");
-    randomQuestion = questions[randomAnswer];
+    randomQuestion = questions[generateRandomQuestion(answers)];
     questionDisplay.innerHTML = `<div id="questionShown">
-    <span>Question: </span><br>${randomQuestion}</div>`;
+    <span>Question:</span><br>${randomQuestion}</div>`;
 
     //Display each element as span
-    chance.innerHTML += `<div id='chancesCount'>Chance Left: ${lossCount}</div>`;
+    chance.innerHTML += `<div id='chancesCount'>Chances Left: ${lossCount}</div>`;
 };
 
 //Initial Game Function
@@ -188,7 +189,7 @@ const init = () => {
 
         //If the answer in the array is the same as the clicked button
         if (charArray.includes(button.innerText)) {
-            charArray.forEach((char, index) => {
+            charArray.forEach((char) => {
                 //If character in array is same as clicked button
                 if (char === button.innerText) {
                     button.classList.add("correct");
@@ -197,7 +198,7 @@ const init = () => {
                     //If winCount equal the correct answer
                     if (winCount == charArray.length) {
                         victory++;
-                        resultDisplay.innerHTML = "You've Won. Congratulation";
+                        displayResult.innerHTML = "You've Won. Congratulation";
                         word.innerHTML = `${randomAnswer}`;
                         scoreWon.innerHTML = `Wins <span style="color:green; font-weight=bold">${victory}</span>`;
                         startBtn.innerText = "Restart";
@@ -217,7 +218,7 @@ const init = () => {
             if (lossCount == 0) {
                 lose++;
                 word.innerHTML = `The correct answer was: <span>${randomAnswer}</span>`;
-                resultDisplay.innerHTML = "Game Over";
+                displayResult.innerHTML = "Game Over";
                 scoreLoss.innerHTML = `Losses: <span style="color:red; font-weight=bold">${lose}</span>`;
 
                 blocker();
