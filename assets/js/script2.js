@@ -147,9 +147,9 @@ const blocker = () => {
 };
 
 //Generate Questions Function
-const generateQuestion = () => {
+const generateQuestion = (currentQuestionIndex) => {
     answerBtn.classList.remove("hide");
-    randomQuestion = questions[generateRandomQuestion(answers)];
+    randomQuestion = questions[currentQuestionIndex];
     questionDisplay.innerHTML = `<div id="questionShown">
     <span>Question:</span><br>${randomQuestion}</div>`;
 
@@ -167,10 +167,12 @@ const init = () => {
     message.innerText = "";
     answerBtn.classList.add("hide");
     answerBtn.innerHTML = "";
-    generateQuestion();
+    
+    let currentQuestionIndex = generateRandomQuestion(answers)
+    generateQuestion(currentQuestionIndex);
 
     //Displaying the answers on the buttons
-    let currentQuestion = questions;
+    let currentQuestion = questions[currentQuestionIndex];
 
     currentQuestion.answers.forEach((answer) => {
         const button = document.createElement("button");
