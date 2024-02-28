@@ -151,7 +151,7 @@ const generateQuestion = (currentQuestionIndex) => {
     answerBtn.classList.remove("hide");
     randomQuestion = questions[currentQuestionIndex];
     questionDisplay.innerHTML = `<div id="questionShown">
-    <span>Question:</span><br>${randomQuestion}</div>`;
+    <span>Question:</span><br>${randomQuestion.question}</div>`;
 
     //Display each element as span
     chance.innerHTML += `<div id='chancesCount'>Chances Left: ${lossCount}</div>`;
@@ -168,11 +168,15 @@ const init = () => {
     answerBtn.classList.add("hide");
     answerBtn.innerHTML = "";
     
-    let currentQuestionIndex = generateRandomQuestion(answers)
+    let currentQuestionIndex = generateRandomQuestion(questions)
     generateQuestion(currentQuestionIndex);
 
     //Displaying the answers on the buttons
     let currentQuestion = questions[currentQuestionIndex];
+    let randomAnswerObj = questions[currentQuestionIndex].answers.find((answer) => {
+        return answer.correct === true;
+    })
+    randomAnswer = randomAnswerObj.text
 
     currentQuestion.answers.forEach((answer) => {
         const button = document.createElement("button");
@@ -185,64 +189,52 @@ const init = () => {
         button.addEventListener("click", pickAnswer);
     });
 
-    //Character button onclick
-    button.addEventListener("click", () => {
-        let charArray = randomAnswer.toUpperCase().split("");
-
-        //If the answer in the array is the same as the clicked button
-        if (charArray.includes(button.innerText)) {
-            charArray.forEach((char) => {
-                //If character in array is same as clicked button
-                if (char === button.innerText) {
-                    button.classList.add("correct");
-                    //increment counter
-                    winCount += 1;
-                    //If winCount equal the correct answer
-                    if (winCount == charArray.length) {
-                        victory++;
-                        displayResult.innerHTML = "You've Won. Congratulation";
-                        word.innerHTML = `${randomAnswer}`;
-                        scoreWon.innerHTML = `Wins <span style="color:green; font-weight=bold">${victory}</span>`;
-                        startBtn.innerText = "Restart";
-
-                        //Block all buttons
-                        blocker();
-                    }
-                }
-            });
+   //Put the random answers to the buttons
+    function pickAnswer(e) {
+        const selectedButton = e.target;
+        const correctAns = selectedButton.dataset.correct === "true";
+        if (correctAns) {
+            correctAnswerHandle(selectedButton);
         } else {
-            //else the lossCount equal zero
-            button.classList.add("incorrect");
-            lossCount -= 1;
-            document.getElementById("chancesCount").innerText = `Chances Left: ${lossCount}`;
-            message.innerText = `Incorrect Answer`;
-            message.style.color = "#ff0000";
-            if (lossCount == 0) {
-                lose++;
-                word.innerHTML = `The correct answer was: <span>${randomAnswer}</span>`;
-                displayResult.innerHTML = "Game Over";
-                scoreLoss.innerHTML = `Losses: <span style="color:red; font-weight=bold">${lose}</span>`;
-
-                blocker();
-            }
+            wrongAnswerHandle(selectedButton);
         }
-        //Disable clicked buttons
-        button.disabled = true;
-    });
-    //Append generated buttons
-    answerBtn.appendChild(button);
+    }
+
+    function correctAnswerHandle(selectedButton) {
+        selectedButton.classList.add("correct");
+        winCount += 1;
+
+    //If winCount equal the correct answer
+    if (winCount == questions.length) {
+        victory++;
+        displayResult.innerHTML = "You've Won. Congratulation";
+        word.innerHTML = `${randomAnswer}`;
+        scoreWon.innerHTML = `Wins <span style="color:green; font-weight=bold">${victory}</span>`;
+        startBtn.innerText = "Restart";
+
+        //Block all buttons
+        blocker();
+        }
+    }
+
+    function wrongAnswerHandle(selectedButton) {
+        selectedButton.classList.add("incorrect");
+        lossCount -= 1;
+        document.getElementById("chancesCount").innerText = `Chances Left: ${lossCount}`;
+        message.innerText = `Incorrect Answer`;
+        message.style.color = "#ff0000";
+    if (lossCount == 0) {
+        lose++;
+        word.innerHTML = `The correct answer was: <span>${randomAnswer}</span>`;
+        displayResult.innerHTML = "Game Over";
+        scoreLoss.innerHTML = `Losses: <span style="color:red; font-weight=bold">${lose}</span>`;
+
+        blocker();
+        }
+    } 
+
 };
 
-//Put the random answers to the buttons
-function pickAnswer(e) {
-    const selectedButton = e.target;
-    const correctAns = selectedButton.dataset.correct === true;
-    if (correctAns) {
-        selectedButton.classList("correct");
-    } else {
-        selectedButton.classList("incorrect");
-    }
-}
 
 //Start the Game
 startBtn.addEventListener("click", () => {
