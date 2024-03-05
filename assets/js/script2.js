@@ -159,7 +159,7 @@ const generateQuestion = (currentQuestionIndex) => {
 
 //Initial Game Function
 const init = () => {
-    winCount = 0;
+    winCount = 1;
     lossCount = 2;
     randomAnswer = "";
     word.innerText = "";
@@ -206,7 +206,7 @@ const init = () => {
         winCount += 1;
 
     //If winCount equal the correct answer
-    if (winCount == selectedButton.dataset.correct === "true") {
+    if (winCount = 1) {
         victory++;
         displayResult.innerHTML = "You've Won. Congratulation";
         word.innerHTML = `${randomAnswer}`;
@@ -224,6 +224,8 @@ const init = () => {
         document.getElementById("chancesCount").innerText = `Chances Left: ${lossCount}`;
         message.innerText = `Incorrect Answer`;
         message.style.color = "#ff0000";
+
+    //Iff the lossCount equal zero
     if (lossCount == 0) {
         lose++;
         word.innerHTML = `The correct answer was: <span>${randomAnswer}</span>`;
