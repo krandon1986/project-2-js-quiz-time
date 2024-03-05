@@ -125,7 +125,6 @@ const questionDisplay = document.querySelector(".questions");
 const controls = document.querySelector(".controls-area");
 const startBtn = document.getElementById("start");
 const answerBtn = document.getElementById("answers");
-const chance = document.getElementById("lives");
 const displayResult = document.getElementById("result");
 const word = document.getElementById("word");
 const scoreWon = document.getElementById("score1");
@@ -149,12 +148,13 @@ const blocker = () => {
 //Generate Questions Function
 const generateQuestion = (currentQuestionIndex) => {
     answerBtn.classList.remove("hide");
+    questionDisplay.innerText = "";
     randomQuestion = questions[currentQuestionIndex];
     questionDisplay.innerHTML = `<div id="questionShown">
     <span>Question:</span><br>${randomQuestion.question}</div>`;
 
     //Display each element as span
-    chance.innerHTML += `<div id='chancesCount'>Chances Left: ${lossCount}</div>`;
+    questionDisplay.innerHTML += `<div id='chancesCount'>Chances Left: ${lossCount}</div>`;
 };
 
 //Initial Game Function
@@ -165,6 +165,7 @@ const init = () => {
     word.innerText = "";
     randomQuestion = "";
     message.innerText = "";
+    questionDisplay.innerHTML =  "";
     answerBtn.classList.add("hide");
     answerBtn.innerHTML = "";
     
@@ -205,7 +206,7 @@ const init = () => {
         winCount += 1;
 
     //If winCount equal the correct answer
-    if (winCount == questions.length) {
+    if (winCount == selectedButton.dataset.correct === "true") {
         victory++;
         displayResult.innerHTML = "You've Won. Congratulation";
         word.innerHTML = `${randomAnswer}`;
