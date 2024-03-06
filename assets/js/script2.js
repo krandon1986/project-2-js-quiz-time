@@ -138,7 +138,7 @@ let lose = 0;
 
 //Generate random question values
 const generateRandomQuestion = (array) => Math.floor(Math.random() * array.length);
-const getRandomQuestion = (numberOfQuestion) => Math.floor(numberOfQuestion * Math.random());
+
 
 //Block all the buttons
 const blocker = () => {
@@ -190,55 +190,54 @@ const init = () => {
         button.addEventListener("click", pickAnswer);
     });
 
-   //Put the random answers to the buttons
-    function pickAnswer(e) {
-        const selectedButton = e.target;
-        const correctAns = selectedButton.dataset.correct === "true";
-        if (correctAns) {
-            correctAnswerHandle(selectedButton);
-        } else {
-            wrongAnswerHandle(selectedButton);
-        }
-    }
-
-    function correctAnswerHandle(selectedButton) {
-        selectedButton.classList.add("correct");
-        winCount += 1;
-
-    //If winCount equal the correct answer
-    if (winCount = 1) {
-        victory++;
-        displayResult.innerHTML = "You've Won. Congratulation";
-        word.innerHTML = `${randomAnswer}`;
-        scoreWon.innerHTML = `Wins <span style="color:green; font-weight=bold">${victory}</span>`;
-        startBtn.innerText = "Restart";
-
-        //Block all buttons
-        blocker();
-        }
-    }
-
-    function wrongAnswerHandle(selectedButton) {
-        selectedButton.classList.add("incorrect");
-        lossCount -= 1;
-        document.getElementById("chancesCount").innerText = `Chances Left: ${lossCount}`;
-        message.innerText = `Incorrect Answer`;
-        message.style.color = "#ff0000";
-
-    //Iff the lossCount equal zero
-    if (lossCount == 0) {
-        lose++;
-        word.innerHTML = `The correct answer was: <span>${randomAnswer}</span>`;
-        displayResult.innerHTML = "Game Over";
-        scoreLoss.innerHTML = `Losses: <span style="color:red; font-weight=bold">${lose}</span>`;
-
-        blocker();
-        }
-    } 
 
 };
 
+//Put the random answers to the buttons
+function pickAnswer(e) {
+    const selectedButton = e.target;
+    const correctAns = selectedButton.dataset.correct === "true";
+    if (correctAns) {
+        correctAnswerHandle(selectedButton);
+    } else {
+        wrongAnswerHandle(selectedButton);
+    }
+}
 
+function correctAnswerHandle(selectedButton) {
+    selectedButton.classList.add("correct");
+    winCount += 1;
+
+//If winCount equal the correct answer
+if (winCount = 1) {
+    victory++;
+    displayResult.innerHTML = "You've Won. Congratulation";
+    word.innerHTML = `${randomAnswer}`;
+    scoreWon.innerHTML = `Wins <span style="color:green; font-weight=bold">${victory}</span>`;
+    startBtn.innerText = "Restart";
+
+    //Block all buttons
+    blocker();
+    }
+}
+
+function wrongAnswerHandle(selectedButton) {
+    selectedButton.classList.add("incorrect");
+    lossCount -= 1;
+    document.getElementById("chancesCount").innerText = `Chances Left: ${lossCount}`;
+    message.innerText = `Incorrect Answer`;
+    message.style.color = "#ff0000";
+
+//If the lossCount equal zero
+if (lossCount == 0) {
+    lose++;
+    word.innerHTML = `The correct answer was: <span>${randomAnswer}</span>`;
+    displayResult.innerHTML = "Game Over";
+    scoreLoss.innerHTML = `Losses: <span style="color:red; font-weight=bold">${lose}</span>`;
+
+    blocker();
+    }
+} 
 //Start the Game
 startBtn.addEventListener("click", () => {
     controls.classList.add("hide");
