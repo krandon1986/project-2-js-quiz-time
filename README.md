@@ -85,16 +85,12 @@ In this section, the features that have been implemented on the site will be exp
 
     ![Victory](assets/screenshot/gamevictory2.png)
 
-    - After running out of the five lives, the games end with a game over and also reveals the right answer to the player.
+    - After running out of the two lives, the games end with loss and the correct answer will displayed.
+    - Like the win count, the loss count beside it will show the number of losses you have accumulated.
+    - When you exit the game by returning the main menu, your win and lose count will reset to 0 when you start the game again. 
 
-    ![Loss](assets/screenshot/gameover.png)
+    ![Loss](assets/screenshot/gameover2.png)
 
-- __Win and Lose Count__
-    - After winning a game, there will be a win count under the result to indicate the numbers of victories you have accumulated.
-    - When you lose a game, there will be a loss count underneath the win count that shows the numbers of losses you have gain.
-    - When you exit the game by returning the main menu, you win and lose count will reset to 0 when you start the game again. 
-
-    ![win and loss count](assets/screenshot/win-and-lose-count.png) 
 
 ## Testing 
 
@@ -150,7 +146,7 @@ This Guess the Location site was deployed on GitHub page.
     - After a successful save, the GitHub section will display a message to inform you that the site is ready to be published at https://krandon1986.github.io/project-2-js-guess-the-location/
 
 ## Credit
- - The framework I used to build the "Guess the Location" game is from a Youtube Javascript tutorial video created by [Coding Artist](https://youtu.be/-qd5sjOfgYY?si=P-blTVa5n_2cj4am)
+ - The framework I used to build the "Quiz Time" game is from a Youtube Javascript tutorial video created by [Coding Artist](https://youtu.be/-qd5sjOfgYY?si=P-blTVa5n_2cj4am)
  
  - General Guidance 
     - [Font](https://fonts.google.com/)
