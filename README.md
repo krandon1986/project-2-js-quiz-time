@@ -1,6 +1,10 @@
-<h1 align="center">Guess the Location</h1>
+<h1 align="center">Quiz Time</h1>
 
 ## Description 
+
+This game is a simple multiple choice quiz where you are presented with random questions and four possible answers with the correct one to choose from. 
+
+Unlike most multiple choice quiz, you get two chances to get the right answer. Selecting the wrong 
 
 This game is loosely based on the combination of the games, 'Guess the Word' and 'Hang Man'. But instead of words, the player has to guess the location. The location can be a city, a country or a popular place. The player are given a hint on what the location is and they have to fill in the empty field by clicking the letter buttons to input it to the board. The correct letter is put in the board and the selected letter button will be colored green, but incorrect letter result in a life being taken out and the letter button being colored red. 
 
@@ -8,7 +12,7 @@ The player are given five chances to put in the correct letter on the board to f
 
 The site is live can be access [here](https://krandon1986.github.io/project-2-js-guess-the-location)
 
-![Responive Mockup](assets/screenshot/amiresponsive.png)
+![Responive Mockup](assets/screenshot/amiresponsive2.png)
 
 ## Design 
 

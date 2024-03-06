@@ -188,6 +188,8 @@ const init = () => {
         }
         button.addEventListener("click", pickAnswer);
     });
+
+
 };
 
 //Put the random answers to the buttons
@@ -225,6 +227,7 @@ function wrongAnswerHandle(selectedButton) {
     message.innerText = `Incorrect Answer`;
     message.style.color = "#ff0000";
 
+
     //If the lossCount equal zero
     if (lossCount == 0) {
         lose++;
@@ -234,6 +237,9 @@ function wrongAnswerHandle(selectedButton) {
 
         blocker();
     }
+
+    //Disable clicked buttons
+    selectedButton.disabled = true;
 }
 //Start the Game
 startBtn.addEventListener("click", () => {
