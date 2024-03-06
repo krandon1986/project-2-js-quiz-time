@@ -81,7 +81,7 @@ In this section, the features that have been implemented on the site will be exp
 
 - __Game Result__
     - When the player get the right answer, the game ends with a victory.
-    - There will be 
+    - There will be a win count underneath the result to indicate the number of victories you have accumulated.
 
     ![Victory](assets/screenshot/gamevictory2.png)
 
