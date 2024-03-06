@@ -137,9 +137,9 @@
      color: #FDF5E6;
      border: 2px solid #ff0000;
 }
-#answer:hover {
-    background-color: grey;
-    color: #FDF5E6;
+ #answer:hover {
+     background-color: grey;
+     color: #FDF5E6;
 }
 /* Game pages */
  .questions {
@@ -196,19 +196,12 @@
      .logo1 {
          display: inline-block;
     }
-     .logo2 {
-         display: none;
-    }
      .heading, h1 {
          max-width: 280px;
          font-size: 2rem;
     }
      .rules {
          height: 70%;
-    }
-     #answers button {
-         width: 2em;
-         height: 2em;
     }
      #start {
          padding: 0.1em 0.1em;
@@ -292,7 +285,6 @@
     }
      .heading, h1 {
          max-width: 412px;
-         font-size: 2rem;
     }
      #start {
          padding: 0.1em 0.1em;
@@ -369,7 +361,6 @@
     }
      .heading, h1 {
          max-width: 540px;
-         font-size: 1rem;
     }
      #start {
          padding: 0.1em 0.1em;
