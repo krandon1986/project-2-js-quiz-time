@@ -4,11 +4,7 @@
 
 This game is a simple multiple choice quiz where you are presented with random questions and four possible answers with the correct one to choose from. 
 
-Unlike most multiple choice quiz, you get two chances to get the right answer. Selecting the wrong 
-
-This game is loosely based on the combination of the games, 'Guess the Word' and 'Hang Man'. But instead of words, the player has to guess the location. The location can be a city, a country or a popular place. The player are given a hint on what the location is and they have to fill in the empty field by clicking the letter buttons to input it to the board. The correct letter is put in the board and the selected letter button will be colored green, but incorrect letter result in a life being taken out and the letter button being colored red. 
-
-The player are given five chances to put in the correct letter on the board to figure out the location. Once their five chances are up, the game is over and it will reveal the correct answer. 
+Unlike most multiple choice quiz, you get two chances to get the right answer. Selecting the wrong answer will result in the user losing a life and the button being colored red. Once the user two lifes are up, the game is over and it will reveal the correct answer. 
 
 The site is live can be access [here](https://krandon1986.github.io/project-2-js-guess-the-location)
 
@@ -32,24 +28,24 @@ The site is live can be access [here](https://krandon1986.github.io/project-2-js
 - __Wireframe__
     - The Main menu of the game.
 
-    ![Main Menu](assets/screenshot/wireframe1.png) 
+    ![Main Menu](assets/screenshot/WireframeScreenshot1.png) 
 
     - The game page where you can start the game or return back to the menu.
 
 
-    ![Start the Game](assets/screenshot/wireframe5.png)
+    ![Start the Game](assets/screenshot/WireframeScreenshot2.png)
 
     - The same game pages where you currently playing the game.
 
-    ![Game Play](assets/screenshot/wireframe2.png)
+    ![Game Play](assets/screenshot/WireframeScreenshot3.png)
 
     - Feedback to the game when the player loses.
 
-    ![Game Loss](assets/screenshot/wireframe3.png) 
+    ![Game Loss](assets/screenshot/WireframeScreenshot4.png) 
 
     - Feedback to the game when the player wins.
 
-    ![Game Win](assets/screenshot/wireframe4.png)
+    ![Game Win](assets/screenshot/WireframeScreenshot5.png)
 
 
 ## Features
@@ -60,7 +56,7 @@ In this section, the features that have been implemented on the site will be exp
     - The rule of the game is displayed before the main heading, along with the play button that is lead to the main game page.
     - The play icon on the play button is from [Font Awesome](https://fontawesome.com/)
 
-    ![Heading and Rules](assets/screenshot/heading.png)
+    ![Heading and Rules](assets/screenshot/heading3.png)
 
 - __Game Buttons__
     - On the game page, there are two buttons.
@@ -71,24 +67,23 @@ In this section, the features that have been implemented on the site will be exp
 
 - __Game Area__
     - There is a life counter on the top right hand corner of the board to indicate the amount of wrong answers you can get before it is game over. 
-    - The hint section will display a clue on what the location is. 
-    - The game input will display the answer, but each letter will be replaced by _ unless the player select the right letter that matches the letter in the answer. 
-    - The 26 buttons on the board are consist of the letter of the alphabet, in alphabetical order instead of keyboard letter order. 
+    - The question section will display the question that the user has to answer.  
+    - The four buttons below the question section contain four possible answer. One of them is the correct answer, the other four are false. 
 
-    ![Game Area](assets/screenshot/gamearea.png)  
+    ![Game Area](assets/screenshot/gamearea2.png)  
 
-    - When the player selects a letter that is in the game input field, the letter of the missing word will be revealed and the selected button highlighted green to indicate that it is the right letter. 
 
-      ![Correct Letter](assets/screenshot/right-letter.png)
+    - If the player selects the wrong answer, a life is taken and the selected button is highlighed red to indicate that it is wrong answer.
+    - A message below the question section will appear saying 'Incorrect Answer' in red letters. 
+    - The wrong answer button will be marked as disable, so that the player won't be able to click again and accidently lose the game. 
 
-    - However, if the player selects the wrong letter, a life is taken and the selected button is highlighed red to indicate that it is wrong letter. 
-
-      ![Incorrect Letter](assets/screenshot/wrong-letter.png)
+      ![Incorrect Letter](assets/screenshot/wrong-answer.png)
 
 - __Game Result__
-    - When the player get all the right letters, the game ends with a victory.
+    - When the player get the right answer, the game ends with a victory.
+    - There will be 
 
-    ![Victory](assets/screenshot/gamevictory.png)
+    ![Victory](assets/screenshot/gamevictory2.png)
 
     - After running out of the five lives, the games end with a game over and also reveals the right answer to the player.
 
