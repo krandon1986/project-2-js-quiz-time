@@ -99,7 +99,7 @@ In this section, the features that have been implemented on the site will be exp
     - The form element isn't allowed to be a child class for the span element.
     - After the corrections, there are no more errors were shown after HTML code was passed through W3C validator: 
         - [Main Menu](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkrandon1986.github.io%2Fproject-2-js-guess-the-location%2F#l13c73)
-        - [Game](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkrandon1986.github.io%2Fproject-2-js-guess-the-location%2Fgame.html%3F#l13c73)
+        - [Game](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkrandon1986.github.io%2Fproject-2-js-guess-the-location%2Fgame2.html%3F#l13c73)
 
 - CSS Validator  
     - There are several incorrect operators in the start IDs and menu classes in the CSS.  
@@ -133,7 +133,8 @@ In this section, the features that have been implemented on the site will be exp
 | 3. The Increment operators for the Win and Loss counts is not working properly as when I lose or win a game for a second time, the count remind as 1. | Having these lines of code: "victory: 0;" and "lose: 0;" in the initial game function has prevented the count from going beyond 1. So I removed these two lines of code and it win and lose counts works prefectly.|
 | 4. There is a console error in the main menu as the page can't read the addEventListener from the javascript | There is no javascript code running on the main menu, hence why they page can't detect the addEventListener. I removed the script source link from the main menu as it isn't needed in the main menu. |
 | 5. The Spare live count is overlapping with itself. | I added an unneccessay construct to the script that display the live count as it is already generated in the question class div. 
-| 6. The game doesn't end after the correct answer has been selected. | Make some adjustment to the code by changing the if statement in correctAnswerHandle function to end the game in a victory if the winCount is 1, as well as defining the winCount value to 1.   
+| 6. The game doesn't end after the correct answer has been selected. | Make some adjustment to the code by changing the if statement in correctAnswerHandle function to end the game in a victory if the winCount is 1, as well as defining the winCount value to 1.  
+
 
 ## Deployment
 
