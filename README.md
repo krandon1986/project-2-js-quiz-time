@@ -8,7 +8,7 @@ Unlike most multiple choice quiz, you get two chances to get the right answer. S
 
 The site is live can be access [here](https://krandon1986.github.io/project-2-js-guess-the-location)
 
-![Responive Mockup](assets/screenshot/amiresponsive2.png)
+![Responive Mockup](assets/screenshots/amiresponsive2.png)
 
 ## Design 
 
@@ -17,35 +17,35 @@ The site is live can be access [here](https://krandon1986.github.io/project-2-js
     - MidnightBlue is used as the background color for the site. 
     - OldLace is used as the background color for the game board and its letter buttons on it. 
 
-![Main Color](assets/screenshot/Pallete2.png)
+![Main Color](assets/screenshots/Pallete2.png)
 
 - __Typography__
     - Poppins google font will be used for throughout the site, and it will fall back to san serif if the web browser can't render Poppin font on the site. 
 
-![Google Fonts 1](assets/screenshot/GoogleFont.png)
-![Google Fonts 2](assets/screenshot/GoogleFont2.png)
+![Google Fonts 1](assets/screenshots/GoogleFont.png)
+![Google Fonts 2](assets/screenshots/GoogleFont2.png)
 
 - __Wireframe__
     - The Main menu of the game.
 
-    ![Main Menu](assets/screenshot/WireframeScreenshot1.png) 
+    ![Main Menu](assets/screenshots/WireframeScreenshot1.png) 
 
     - The game page where you can start the game or return back to the menu.
 
 
-    ![Start the Game](assets/screenshot/WireframeScreenshot2.png)
+    ![Start the Game](assets/screenshots/WireframeScreenshot2.png)
 
     - The same game pages where you currently playing the game.
 
-    ![Game Play](assets/screenshot/WireframeScreenshot3.png)
+    ![Game Play](assets/screenshots/WireframeScreenshot3.png)
 
     - Feedback to the game when the player loses.
 
-    ![Game Loss](assets/screenshot/WireframeScreenshot4.png) 
+    ![Game Loss](assets/screenshots/WireframeScreenshot4.png) 
 
     - Feedback to the game when the player wins.
 
-    ![Game Win](assets/screenshot/WireframeScreenshot5.png)
+    ![Game Win](assets/screenshots/WireframeScreenshot5.png)
 
 
 ## Features
@@ -56,40 +56,40 @@ In this section, the features that have been implemented on the site will be exp
     - The rule of the game is displayed before the main heading, along with the play button that is lead to the main game page.
     - The play icon on the play button is from [Font Awesome](https://fontawesome.com/)
 
-    ![Heading and Rules](assets/screenshot/heading3.png)
+    ![Heading and Rules](assets/screenshots/heading3.png)
 
 - __Game Buttons__
     - On the game page, there are two buttons.
         - The Main Menu button will lead the player back to the main menu page when it is clicked.
         - The Start button will allow the player to start the game. 
     
-      ![Game Buttons](assets/screenshot/gamebuttons.png)
+      ![Game Buttons](assets/screenshots/gamebuttons.png)
 
 - __Game Area__
     - There is a life counter on the top right hand corner of the board to indicate the amount of wrong answers you can get before it is game over. 
     - The question section will display the question that the user has to answer.  
     - The four buttons below the question section contain four possible answer. One of them is the correct answer, the other four are false. 
 
-    ![Game Area](assets/screenshot/gamearea2.png)  
+    ![Game Area](assets/screenshots/gamearea2.png)  
 
 
     - If the player selects the wrong answer, a life is taken and the selected button is highlighed red to indicate that it is wrong answer.
     - A message below the question section will appear saying 'Incorrect Answer' in red letters. 
     - The wrong answer button will be marked as disable, so that the player won't be able to click again and accidently lose the game. 
 
-      ![Incorrect Letter](assets/screenshot/wrong-answer.png)
+      ![Incorrect Letter](assets/screenshots/wrong-answer.png)
 
 - __Game Result__
     - When the player get the right answer, the game ends with a victory.
     - There will be a win count underneath the result to indicate the number of victories you have accumulated.
 
-    ![Victory](assets/screenshot/gamevictory2.png)
+    ![Victory](assets/screenshots/gamevictory2.png)
 
     - After running out of the two lives, the games end with loss and the correct answer will displayed.
     - Like the win count, the loss count beside it will show the number of losses you have accumulated.
     - When you exit the game by returning the main menu, your win and lose count will reset to 0 when you start the game again. 
 
-    ![Loss](assets/screenshot/gameover2.png)
+    ![Loss](assets/screenshots/gameover2.png)
 
 
 ## Testing 
