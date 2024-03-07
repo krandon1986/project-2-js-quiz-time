@@ -22,30 +22,30 @@ The site is live can be access [here](https://krandon1986.github.io/project-2-js
 - __Typography__
     - Poppins google font will be used for throughout the site, and it will fall back to san serif if the web browser can't render Poppin font on the site. 
 
-![Google Fonts 1](assets/screenshots/GoogleFont.png)
-![Google Fonts 2](assets/screenshots/GoogleFont2.png)
+![Google Fonts 1](assets/screenshots/googlefont.png)
+![Google Fonts 2](assets/screenshots/googlefont2.png)
 
 - __Wireframe__
     - The Main menu of the game.
 
-    ![Main Menu](assets/screenshots/WireframeScreenshot1.png) 
+    ![Main Menu](assets/screenshots/wireframe1.png) 
 
     - The game page where you can start the game or return back to the menu.
 
 
-    ![Start the Game](assets/screenshots/WireframeScreenshot2.png)
+    ![Start the Game](assets/screenshots/wireframe2.png)
 
     - The same game pages where you currently playing the game.
 
-    ![Game Play](assets/screenshots/WireframeScreenshot3.png)
+    ![Game Play](assets/screenshots/wireframe3.png)
 
     - Feedback to the game when the player loses.
 
-    ![Game Loss](assets/screenshots/WireframeScreenshot4.png) 
+    ![Game Loss](assets/screenshots/wireframe4.png) 
 
     - Feedback to the game when the player wins.
 
-    ![Game Win](assets/screenshots/WireframeScreenshot5.png)
+    ![Game Win](assets/screenshots/wireframe5.png)
 
 
 ## Features
@@ -56,7 +56,7 @@ In this section, the features that have been implemented on the site will be exp
     - The rule of the game is displayed before the main heading, along with the play button that is lead to the main game page.
     - The play icon on the play button is from [Font Awesome](https://fontawesome.com/)
 
-    ![Heading and Rules](assets/screenshots/heading3.png)
+    ![Heading and Rules](assets/screenshots/heading.png)
 
 - __Game Buttons__
     - On the game page, there are two buttons.
@@ -99,7 +99,7 @@ In this section, the features that have been implemented on the site will be exp
     - The form element isn't allowed to be a child class for the span element.
     - After the corrections, there are no more errors were shown after HTML code was passed through W3C validator: 
         - [Main Menu](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkrandon1986.github.io%2Fproject-2-js-guess-the-location%2F#l13c73)
-        - [Game](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkrandon1986.github.io%2Fproject-2-js-guess-the-location%2Fgame2.html%3F#l13c73)
+        - [Game](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkrandon1986.github.io%2Fproject-2-js-guess-the-location%2Fgame.html%3F#l13c73)
 
 - CSS Validator  
     - There are several incorrect operators in the start IDs and menu classes in the CSS.  
@@ -114,11 +114,11 @@ In this section, the features that have been implemented on the site will be exp
 
     - Main Menu
 
-        ![Index](assets/screenshot/accessibility1.png)
+        ![Index](assets/screenshots/accessibility1.png)
 
     - Game Area
 
-        ![Game](assets/screenshot/accessibility2.png)
+        ![Game](assets/screenshots/accessibility2.png)
 
 - Mobile Responsiveness
     - Maximum screen width for responsive design was done at 375px.   
@@ -147,7 +147,7 @@ This Guess the Location site was deployed on GitHub page.
     - After a successful save, the GitHub section will display a message to inform you that the site is ready to be published at https://krandon1986.github.io/project-2-js-guess-the-location/
 
 ## Credit
- - The framework I used to build the "Quiz Time" game is from a Youtube Javascript tutorial video created by [Coding Artist](https://youtu.be/-qd5sjOfgYY?si=P-blTVa5n_2cj4am)
+ -  A Youtube Javascript tutorial video created by [Coding Artist](https://youtu.be/-qd5sjOfgYY?si=P-blTVa5n_2cj4am) became the framework to help me build a multiple choice quiz. 
  
  - General Guidance 
     - [Font](https://fonts.google.com/)

@@ -199,7 +199,7 @@ function pickAnswer(e) {
     } else {
         wrongAnswerHandle(selectedButton);
     }
-}
+};
 
 function correctAnswerHandle(selectedButton) {
     selectedButton.classList.add("correct");
@@ -216,7 +216,7 @@ function correctAnswerHandle(selectedButton) {
         //Block all buttons
         blocker();
     }
-}
+};
 
 function wrongAnswerHandle(selectedButton) {
     selectedButton.classList.add("incorrect");
@@ -237,7 +237,7 @@ function wrongAnswerHandle(selectedButton) {
 
     //Disable clicked buttons
     selectedButton.disabled = true;
-}
+};
 
 //Start the Game
 startBtn.addEventListener("click", () => {
