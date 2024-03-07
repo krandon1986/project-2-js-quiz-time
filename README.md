@@ -17,7 +17,7 @@ The site is live can be access [here](https://krandon1986.github.io/project-2-js
     - MidnightBlue is used as the background color for the site. 
     - OldLace is used as the background color for the game board and its letter buttons on it. 
 
-![Main Color](assets/screenshots/Pallete2.png)
+![Main Color](assets/screenshots/pallete.png)
 
 - __Typography__
     - Poppins google font will be used for throughout the site, and it will fall back to san serif if the web browser can't render Poppin font on the site. 
