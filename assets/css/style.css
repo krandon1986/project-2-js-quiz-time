@@ -71,6 +71,7 @@ p {
 	justify-content: center;
 	flex-direction: column;
 	text-align: center;
+    padding: 12px;
 }
 
 /* buttons*/
@@ -147,6 +148,7 @@ p {
 	height: 3em;
 	width: 100%;
 	transition: all 0.3s;
+    margin-bottom: 0.5em;
 }
 
 #answers .correct {
@@ -217,7 +219,7 @@ footer {
 	left: 0;
 	bottom: 0;
 	box-sizing: border-box;
-	min-height: 80px;
+	min-height: 50px;
 	padding-top: 5px;
 	text-align: center;
 	background-color: #070743;
@@ -281,6 +283,10 @@ footer {
 		padding: 0.1em 0.1em;
 		font-size: 0.9em;
 	}
+
+    footer {
+        font-size: 0.6em;
+    }
 }
 
 @media (max-width: 375px) {
@@ -472,12 +478,12 @@ footer {
 	}
 
 	#start {
-		padding: 0.1em 0.1em;
+		padding: 1em 1.5em;
 		font-size: 0.9em;
 	}
 
 	.menu {
-		padding: 0.1em 0.1em;
+		padding: 1em 1em;
 		font-size: 0.9em;
 	}
 }
