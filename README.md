@@ -121,7 +121,7 @@ In this section, the features that have been implemented on the site will be exp
         ![Game](assets/screenshots/accessibility2.png)
 
 - Mobile Responsiveness
-    - Maximum screen width for responsive design was done at 375px.   
+    - The lowest to highest maximum screen width for responsive design was done from 338px to 912px.   
     - Mobile responsiveness was limited to the "toggle device" feature in Chrome Developer Tools due to lack of access to more physical devices.
 
 ## Bugs
