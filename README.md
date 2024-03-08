@@ -8,7 +8,7 @@ Unlike most multiple choice quiz, you get two chances to get the right answer. S
 
 The site is live can be access [here](https://krandon1986.github.io/project-2-js-guess-the-location)
 
-![Responive Mockup](assets/screenshots/amiresponsive2.png)
+![Responive Mockup](assets/screenshots/amiresponsive.png)
 
 ## Design 
 
