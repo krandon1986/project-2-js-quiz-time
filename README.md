@@ -6,7 +6,7 @@ This game is a simple multiple choice quiz where you are presented with random q
 
 Unlike most multiple choice quiz, you get two chances to get the right answer. Selecting the wrong answer will result in the user losing a life and the button being colored red. Once the user two lifes are up, the game is over and it will reveal the correct answer. 
 
-The site is live can be access [here](https://krandon1986.github.io/project-2-js-guess-the-location)
+The site is live can be access [here](https://krandon1986.github.io/project-2-js-quiz-time/)
 
 ![Responive Mockup](assets/screenshots/amiresponsive.png)
 
@@ -144,7 +144,7 @@ This Guess the Location site was deployed on GitHub page.
     - In your GitHib repository, click the 'setting' tab.
     - Look at the left menu and select 'Pages'
     - In the source section drop-down menu, select the 'Main Branch' and click 'Save'
-    - After a successful save, the GitHub section will display a message to inform you that the site is ready to be published at https://krandon1986.github.io/project-2-js-guess-the-location/
+    - After a successful save, the GitHub section will display a message to inform you that the site is ready to be published at https://krandon1986.github.io/project-2-js-quiz-time/
 
 ## Credit
  -  A Youtube Javascript tutorial video created by [Coding Artist](https://youtu.be/-qd5sjOfgYY?si=P-blTVa5n_2cj4am) became the framework to help me build a multiple choice quiz. 
