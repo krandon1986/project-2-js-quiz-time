@@ -132,8 +132,8 @@ In this section, the features that have been implemented on the site will be exp
 | 2. The Heading is out of proportions on the mobile device | Scale down the max-width of the mobile devices.|
 | 3. The Increment operators for the Win and Loss counts is not working properly as when I lose or win a game for a second time, the count remind as 1. | Having these lines of code: "victory: 0;" and "lose: 0;" in the initial game function has prevented the count from going beyond 1. So I removed these two lines of code and it win and lose counts works prefectly.|
 | 4. There is a console error in the main menu as the page can't read the addEventListener from the javascript | There is no javascript code running on the main menu, hence why they page can't detect the addEventListener. I removed the script source link from the main menu as it isn't needed in the main menu. |
-| 5. The Spare live count is overlapping with itself. | I added an unneccessay construct to the script that display the live count as it is already generated in the question class div. 
-| 6. The game doesn't end after the correct answer has been selected. | Make some adjustment to the code by changing the if statement in correctAnswerHandle function to end the game in a victory if the winCount is 1, as well as defining the winCount value to 1.  
+| 5. The Spare live count is overlapping with itself. | I added an unneccessay construct to the script that display the live count as it is already generated in the question class div. |
+| 6. The game doesn't end after the correct answer has been selected. | Make some adjustment to the code by changing the if statement in correctAnswerHandle function to end the game in a victory if the winCount is 1, as well as defining the winCount value to 1. | 
 
 
 ## Deployment
