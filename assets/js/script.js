@@ -118,7 +118,7 @@ const questions = [
         ],
     },
     {
-        question: "Who was first actor to play Batman in the first Batman movie?",
+        question: "Who was the first actor to play Batman in the first Batman movie?",
         answers: [
             { text: "Val Kilmer", correct: false },
             { text: "George Clooney", correct: false },
@@ -126,6 +126,88 @@ const questions = [
             { text: "Michael Keaton", correct: true },
         ],
     },
+    {
+        question: "What date was the first ever episode of Star Trek was aired on?",
+        answers: [
+            { text: "1 September 1966", correct: false },
+            { text: "8 September 1966", correct: true },
+            { text: "15 September 1966", correct: false },
+            { text: "22 September 1966", correct: false },
+        ],
+    },
+    {
+        question: "What 60s TV show predicted the Chernobyl disaster?",
+        answers: [
+            { text: "Hawaii Five-O", correct: false },
+            { text: "The Man from U.N.C.L.E", correct: false },
+            { text: "Thunderbirds", correct: true },
+            { text: "Mission: Impossible", correct: false },
+        ],
+    },
+    {
+        question: "What is Arnold Schwarzenegger's most famous and re-used movie catchphase?",
+        answers: [
+            { text: "I'll be back", correct: true },
+            { text: "Hasta la vista, baby", correct: false },
+            { text: "Get Out", correct: false },
+            { text: "I have what she having", correct: false },
+        ],
+    },
+    {
+        question: "What date did the Hillsborough disaster happen on?",
+        answers: [
+            { text: "1 April 1989", correct: false },
+            { text: "10 April 1989", correct: false },
+            { text: "15 April 1989", correct: true },
+            { text: "30 April 1989", correct: false },
+        ],
+    },
+    {
+        question: "Who was the first man on the moon?",
+        answers: [
+            { text: "Neil Armstrong", correct: true },
+            { text: "Yuri Gagarin", correct: false },
+            { text: "Alexei Leonov", correct: false },
+            { text: "Edwin 'Buzz' Aldrin Jr", correct: false },
+        ],
+    },
+    {
+        question: "What year was the National Health Service formed?",
+        answers: [
+            { text: "1920", correct: false },
+            { text: "1935", correct: false },
+            { text: "1948", correct: true },
+            { text: "1960", correct: false },
+        ],
+    },
+    {
+        question: "What is the name of the first 007 novel that came out?",
+        answers: [
+            { text: "Dr. No", correct: false },
+            { text: "Live and Let Die", correct: false },
+            { text: "The Living Daylight", correct: false },
+            { text: "Casino Royale", correct: true },
+        ],
+    },
+    {
+        question: "What was the first video-game?",
+        answers: [
+            { text: "Pacman", correct: false },
+            { text: "Pong", correct: false },
+            { text: "Spacewar!", correct: false },
+            { text: "Tennis for Two", correct: true },
+        ],
+    },
+    {
+        question: "What famous theoretical physicist say a Hindu scripture quote 'Now, I am become Death, the destroyer of worlds'?",
+        answers: [
+            { text: "Albert Einstein", correct: false },
+            { text: "J. Robert Oppenheimer", correct: true },
+            { text: "Stephen Hawking", correct: false },
+            { text: "Galileo Galilei", correct: false },
+        ],
+    },
+
 ];
 
 //Initial Reference
