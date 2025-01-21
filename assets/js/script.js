@@ -117,6 +117,15 @@ const questions = [
             { text: "1993", correct: true },
         ],
     },
+    {
+        question: "Who was first actor to play Batman in the first Batman movie?",
+        answers: [
+            { text: "Val Kilmer", correct: false },
+            { text: "George Clooney", correct: false },
+            { text: "Christian Bale", correct: false },
+            { text: "Michael Keaton", correct: true },
+        ],
+    },
 ];
 
 //Initial Reference
